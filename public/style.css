@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  font-size: 16px;
+  font-family: 'Avenir', sans-serif;
+  font-weight: normal;
+  background-color: #f8f8ff;
+}
+
+.container {
+  display: inline-block;
+  padding: 0rem 1em 0rem 1em;
+  margin: 0 5% 1rem 5%;
+  max-width: 90%;
+}
+
+h1 {
+  padding: 0.5em 0 2rem 0;
+  margin: 0;
+  letter-spacing: 0.1rem;
+  font-size: 3.125em;
+  font-weight: 500;
+}
+
+h1.h1resume {
+  padding: 0.5em 0 0 0;
+  margin: 0;
+}
+
+h2 {
+  text-decoration: underline;
+  font-weight: normal;
+  padding: 0;
+  margin: 1rem 0 0.5rem 0;
+}
+
+h3 {
+  font-weight: normal;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.5em;
+}
+ul {
+  padding: 0 0 0.33rem 0;
+  margin: 0 0 0 0.33rem;
+  list-style: none;
+}
+a {
+  color: rgb(56, 14, 14);
+  text-decoration: underline;
+}
+#selfie {
+  width: 20em;
+  border-radius: 50%;
+  border: 0.15rem solid rgb(56, 14, 14, 0.5);
+  background-color: lightgray;
+}
+
+li.liResume:before {
+  content: '¶';
+  font-size: 0.75em;
+}
+div.small {
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+#descriptionThing {
+  padding: 0.5rem;
+}
+
+.row {
+  display: flex;
+  border-radius: 0.5rem;
+}
+
+.rightColumn {
+  flex: 33%;
+  padding-left: 1.5rem;
+}
+
+.leftColumn {
+  flex: 67%;
+  padding: 0 1.5rem 0 0;
+  border-right: 0.1rem solid;
+  border-color: gray;
+}
+
+.leftColumnIndex {
+  /* flex: 67%; */
+  padding: 0 1.5rem 0 0;
+}
+
+#descriptionThing {
+  padding: 0;
+}
+
+.nav-link {
+  padding: 0;
+  color: rgb(56, 14, 14);
+  width: 100%;
+  text-decoration: underline;
+}
+.navbar-nav .nav-item:hover .nav-link {
+  background-color: rgb(56, 14, 14);
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  #selfie {
+    width: 15em;
+    margin: 1em 0 0 1em;
+    float: right;
+  }
+  .navbar {
+    margin: 0 0 0 0;
+  }
+  #navbarButton {
+    display: none;
+  }
+  .navbar-container {
+    height: 3em;
+  }
+  .navbar-parent {
+    background: white;
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: solid 0.1em;
+    height: 3em;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #selfie {
+    width: 7em;
+    float: right;
+    margin-top: 1em;
+  }
+
+  .navbar {
+    display: none;
+  }
+  .navbar-container {
+    padding: 1em;
+    float: right;
+  }
+  #burger {
+    width: 1em;
+  }
+}
